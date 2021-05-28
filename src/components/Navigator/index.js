@@ -16,6 +16,7 @@ import { NavLink } from 'react-router-dom';
 import { getIcons } from './../../helpers';
 import './index.css';
 
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -70,13 +71,13 @@ const Menu = [
 const Navigator = ({ handleNavigation, openNav }) => {
     const classes = useStyles();
     const theme = useTheme();
-
+    
     const onLogOut = () => {
         localStorage.removeItem('isLoggedIn');
         localStorage.removeItem('employeeName');
         localStorage.removeItem('employeeId');
         // eslint-disable-next-line no-restricted-globals
-        location.reload();
+        window.location.href = '/';
     };
 
     console.log('Navigator rendered');
