@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React, { useRef, useContext } from 'react';
 import './App.css';
+import Landing from './components/LandingPage';
+import Login from './components/Login';
+import AuthContext from './store/auth-context';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const ctx = useContext(AuthContext);
+    //localStorage.clear();
+    return ctx.isLoggedIn ? (
+        <Landing onLogoutFunc={ctx.onLogOut} />
+    ) : (
+        <Login onLoginFunc={ctx.onLogin} />
+    );
+};
 
 export default App;
