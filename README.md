@@ -1,3 +1,26 @@
+
+This web application entitle as "GuidePRO" mainly aims in providing features for online meeting sessions management. This application is being used by one of the start-up financial organisation to meet its requirements for handling online meeting sessions among its employees. It helps to mark attendance of meeting participants, regulate participation, organise quizes (MCQ questionnaire) and see the quiz scores as scored by participant in real-time. The updates happen in real-time live fashion. I have made use of Firestore for handling the backend activities.This website is a fully responsive website and it maintains a virtual classroom/meeting room effect.
+
+Technologies used – React.js, Redux, Html5, Sass, Firebase
+
+More Details : https://joydasportfolio.web.app/Work/Details/7Cyr1zlKd7TisCPjW6YE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
